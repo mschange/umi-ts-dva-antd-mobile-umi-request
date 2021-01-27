@@ -1,0 +1,28 @@
+.main {
+  footer {
+    z-index: 2;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  :global {
+    .am-tab-bar::-webkit-scrollbar {
+      display: none;
+    }
+
+    #tab-bar.demo {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #tab-bar .demoName {
+      height: 80px;
+    }
+
+    #tab-bar .demo-preview-item .am-tab-bar {
+      background-color: red;
+    }
+  }
+}
